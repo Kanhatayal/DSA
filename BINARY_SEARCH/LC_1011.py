@@ -3,17 +3,7 @@ from typing import List
 
 class Solution:
     def shipWithinDays(self, weights: List[int], days: int) -> int:
-        """
-        Binary Search on Answer
-
-        Search for the minimum ship capacity that allows shipping
-        all packages within the given number of days.
-        """
-
-        # Minimum possible capacity is the heaviest package.
         low = max(weights)
-
-        # Maximum possible capacity is shipping everything in one day.
         high = sum(weights)
 
         while low <= high:
