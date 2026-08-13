@@ -28,3 +28,9 @@ class Solution:
                 low = capacity + 1
 
         return low
+
+if __name__  == "__main__":
+    object = Solution()
+    weights = [1,2,3,4,5,6,7,8,9,10]
+    days = 5
+    print(object.shipWithinDays(weights, days))
