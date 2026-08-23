@@ -50,3 +50,22 @@ int main(){
 
     return 0;
 }
+
+// # ── Phase 1: Traversal — answer each in code below the comment ──
+
+// # Q1. How do I write DFS both RECURSIVELY and ITERATIVELY (explicit stack)?
+// #     What single structure stops infinite loops on cycles, and WHEN do I mark a node?
+// #     (invariant: a node is pushed/visited only once — the visited set is the guard)
+
+// # Q2. How do I write BFS with a queue?
+// #     WHY does BFS give shortest paths on UNWEIGHTED graphs?
+// #     (invariant: the queue always holds nodes in non-decreasing distance order)
+
+// # Q3. How do I traverse a DISCONNECTED graph so I miss no node?
+// #     (loop over all nodes, launch a fresh traversal from each unvisited one)
+
+// # Q4. Practice: print a graph's DFS and BFS order from an edge list I built myself.
+
+// # Q5. ★ Clone Graph (Med): what map do I need so a back-edge finds the copy
+// #     instead of recursing forever?
+// #     (invariant: old node -> new node, built as you visit)
