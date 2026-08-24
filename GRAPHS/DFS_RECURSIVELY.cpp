@@ -13,6 +13,7 @@ vector<int> dfs(vector<vector<int>> & adj){
     int n = adj.size();
     vector<bool> visited(n, false);
     vector<int> res;
+    // multi source dfs, use only single call for connected graph, loop is used for disconnected graph
     for(int i = 0; i < n; i++){
         if(!visited[i])
         dfsRec(i, adj, visited, res);

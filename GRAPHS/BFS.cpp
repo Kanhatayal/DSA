@@ -21,11 +21,14 @@ vector<int> bfs(vector<vector<int>> &adj){
     int n = adj.size();
     vector<bool> visited(n, false);
     vector<int> res;
+    // use loop for multi source bfs(remove loop for connected single graph)
     for(int i = 0; i < n; i++){
         if(visited[i] == false){
             bfsRec(i, adj, visited, res);
         }
     }
+    // assuming, starting from 0th node, and node naming is from 0-> n-1
+    bfsRec(0, adj, visited, res);
     return res;
 }
 
