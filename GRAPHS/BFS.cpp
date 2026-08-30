@@ -20,7 +20,7 @@ void bfsRec(int node, vector<vector<int>>&adj, vector<bool> &visited, vector<int
 vector<int> bfs(vector<vector<int>> &adj){
     int n = adj.size();
     vector<bool> visited(n, false);
-    vector<int> res;
+    vector<int> res;    
     // use loop for multi source bfs(remove loop for connected single graph)
     for(int i = 0; i < n; i++){
         if(visited[i] == false){
