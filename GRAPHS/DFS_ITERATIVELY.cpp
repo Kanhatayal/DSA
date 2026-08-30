@@ -22,7 +22,7 @@ vector<int> dfs(vector<vector<int>> &adj){
                 // example
                 // 0 -> 2, 3, 1
                 // after dfs visit
-                // 0 2 4 3 1
+                // 0 1 2 3 4
                 for(int j = adj[node].size() - 1; j >= 0; j--){
                     int nbhr  = adj[node][j];
                     if(!visited[nbhr]) st.push(nbhr);
@@ -34,7 +34,7 @@ vector<int> dfs(vector<vector<int>> &adj){
 }
 void addEdge(vector<vector<int>>& adj, int u, int v){
     adj[u].push_back(v);
-    adj[v].push_back(u);
+    // adj[v].push_back(u);
 }
 int main(){
     int v = 5;
