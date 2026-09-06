@@ -1,3 +1,7 @@
 *.exe
 tempCodeRunnerFile.cpp
+tempCodeRunnerFile.py
 .vscode/
+*.xlsx
+__pycache__/
+*.pyc
